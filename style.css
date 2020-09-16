@@ -213,6 +213,12 @@ header::before {
     margin:auto;
 }
 
+.box-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .box-container .box {
     float: left;
     width: 33%;
@@ -226,5 +232,22 @@ header::before {
 
 .box-container .box h3 {
     color: #001A4F;
+    margin-bottom: 10px;
+}
+
+
+.IOSapp-ad {
+    background: #011a50;
+    padding: 20px 0;
+    color: white;
+}
+
+.IOSapp-ad .text-box {
+    display: inline-block;
+    width: 50%;
+}
+
+.IOSapp-ad .text-box h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
