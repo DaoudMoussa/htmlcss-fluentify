@@ -65,19 +65,37 @@ header::before {
 
 #menu-bar .menu li {
     display: inline-block;
-
+    position: relative;
 }
 
 #menu-bar .menu li a {
     text-decoration: none;
     color: white;
-    padding: 0 2px;
+    padding: 0 5px;
+}
+
+#menu-bar .menu li a:hover {
+    color:#ccd1dd;
 }
 
 .w-submenu::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: ' \f107'
+}
+
+.current-item::before{
+    content: '';
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #63de83;
+    position:absolute;
+    z-index: -1;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
 }
 
 .button-container {
@@ -314,4 +332,107 @@ header::before {
 
 .subscription .text-box p {
     margin-bottom: 20px;
+}
+
+/*===========FINE MAIN===========*/
+
+footer {
+    background-color: #00194f;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-container a:hover {
+ color: #4c997f;
+
+}
+.left-footer {
+    float: left;
+    width: 20%;
+}
+
+.left-footer .logo {
+    margin-bottom: 10px;
+}
+
+.left-footer .mail {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.left-footer .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #64DE82;
+}
+
+.right-footer {
+    float: left;
+    width: 80%;
+    padding-top: 40px;
+}
+
+.top-footer{
+    margin-bottom: 50px;
+}
+
+.top-footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.top-footer .column {
+    display: inline-block;
+    float: left;
+    width: calc(100% / 6);
+    padding: 0 5px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.top-footer a:not(.title) {
+    display: inline-block;
+    margin-bottom: 5px;
+    color:#ccd1dd;
+}
+
+.top-footer .title:hover {
+    color:#ccd1dd;
+}
+
+
+.top-footer .title {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.bottom-footer {
+    border-top: 1px solid white;
+    padding: 50px;
+}
+
+.bottom-footer li{
+    display: inline-block;
+    margin-right: 20px;
 }
