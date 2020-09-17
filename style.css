@@ -6,7 +6,7 @@
 }
 
 .container {
-    width: 80%;
+    width: 65%;
     margin: auto;
 }
 
@@ -37,7 +37,7 @@ header::before {
     position: relative;
     z-index: 2;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -71,7 +71,7 @@ header::before {
 #menu-bar .menu li a {
     text-decoration: none;
     color: white;
-    padding: 0 5px;
+    padding: 0 2px;
 }
 
 .w-submenu::after {
@@ -150,37 +150,33 @@ header::before {
     padding: 100px 0;
 }
 
-.presentation .photo {
+.photo {
     float: left;
-    width: 43%;
+    width: 50%;
 }
 
-.photo img {
-    width: 100%;
+.presentation .photo img {
+    float: right;
 }
 
-
-
-.presentation .text-column {
+.text-column {
     float: left;
-    width: 55%;
+    width: 50%;
 }
 
-.presentation .text-column h2 {
-    width:80%;
+.text-column h2 {
     color: #737373;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.presentation .text-column h2 span{
+.text-column h2 span{
     color: #63de83;
 }
 
 .text-column .text-section {
     padding: 20px 0;
-    width: 80%;
 }
 
 .text-column .text-section:not(:last-child) {
@@ -208,29 +204,23 @@ header::before {
     margin-bottom: 30px;
 }
 
-.box-container {
-    width: 60%;
-    margin:auto;
-}
-
-.box-container::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.box-container .box {
+.needs .box {
+    margin-right: 10px;
     float: left;
-    width: 33%;
+    width: calc((100% / 3) - (20px / 3));   /*6.66 sono i margini totli (20px) diviso 3*/
     text-align: center;
 }
 
-.box-container .box img {
+.needs .box:last-child{
+    margin: 0;
+}
+
+.needs .box img {
     margin-bottom: 10px;
 }
 
 
-.box-container .box h3 {
+.needs .box h3 {
     color: #001A4F;
     margin-bottom: 10px;
 }
@@ -238,16 +228,53 @@ header::before {
 
 .IOSapp-ad {
     background: #011a50;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     color: white;
 }
 
 .IOSapp-ad .text-box {
-    display: inline-block;
+    float: left;
     width: 50%;
+    padding-top: 80px;
 }
 
 .IOSapp-ad .text-box h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
+}
+
+.IOSapp-ad .text-box a {
+    color: #63de83;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.IOSapp-ad .text-box a:hover {
+    color: #4c997f;
+}
+
+.IOSapp-ad .photo-box {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.IOSapp-ad .photo-box img {
+    display: block;
+    padding-left: 30px;
+}
+
+.spazio {
+    height: 100px;
+}
+
+.platform-security {
+    padding: 30px 0;
+}
+
+.platform-security .text-column {
+    padding: 100px 0;
 }
