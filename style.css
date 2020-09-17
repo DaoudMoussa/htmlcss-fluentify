@@ -194,6 +194,9 @@ header::before {
     color: #727272;
 }
 
+
+
+
 .needs {
     padding: 50px 0;
 }
@@ -224,6 +227,7 @@ header::before {
     color: #001A4F;
     margin-bottom: 10px;
 }
+
 
 
 .IOSapp-ad {
@@ -271,10 +275,43 @@ header::before {
     height: 100px;
 }
 
+
+
 .platform-security {
     padding: 30px 0;
 }
 
 .platform-security .text-column {
     padding: 100px 0;
+}
+
+
+
+
+.subscription {
+    background: #2a4781;
+    color: white;
+    padding: 50px;
+}
+
+.subscription::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.subscription h2 {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.subscription .text-box {
+    float: left;
+    width: 50%;
+}
+
+.subscription .text-box p {
+    margin-bottom: 20px;
 }
